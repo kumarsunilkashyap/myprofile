@@ -1,12 +1,12 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 const Sidebar = () => {
   return (
-    <aside className="fixed top-16 left-0 w-64 bg-blue-600 text-white h-full p-4 z-10">
+    <aside className="fixed top-16 left-0 w-48 bg-gray-600 text-white h-full p-4 z-10">
       <nav className="flex flex-col space-y-4">
-        <a href="#" className="hover:bg-blue-700 p-2 rounded">
-          Home
-        </a>
+        <NavLink to="/dashboard" className="hover:bg-blue-700 p-2 rounded">
+          Dashboard
+        </NavLink>
         <a href="#" className="hover:bg-blue-700 p-2 rounded">
           About
         </a>
