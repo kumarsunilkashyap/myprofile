@@ -1,16 +1,22 @@
 import Layout from "../Layout";
 import "./App.css";
-import Footer from "./Component/Footer";
-import Header from "./Component/Header";
-import Sidebar from "./Component/Sidebar";
+
+import HomePage from "./Pages/DashboardContent";
+import LoginPage from "./Pages/LoginPage";
+import LogoutPage from "./Pages/LogoutPage";
+import SettingsPage from "./Pages/Setting";
+import TransactionPage from "./Pages/TranscationPage";
 
 function App() {
   return (
     <>
-      {/* <Header />
-      <Sidebar />
-      <Footer /> */}
+    
       <Layout />
+      <HomePage />
+      <SettingsPage />
+      <TransactionPage />
+      <LoginPage />
+      <LogoutPage />
     </>
   );
 }
