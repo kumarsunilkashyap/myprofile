@@ -1,12 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "../Layout";
 
-import LoginPage from "./Pages/LoginPage";
+
 import LogoutPage from "./Pages/LogoutPage";
 import SettingsPage from "./Pages/Setting";
 import TransactionPage from "./Pages/TranscationPage";
 import DashboardContent from "./Pages/DashboardContent";
-
 const router = createBrowserRouter([
   {
     path: "/myprofile/",
@@ -17,8 +16,8 @@ const router = createBrowserRouter([
         element: <DashboardContent />,
       },
       {
-        path: "/myprofile/login", // Matches /project/
-        element: <LoginPage />,
+        path: "/myprofile/setting", // Matches /project/
+        element: <Setting />,
       },
       {
         path: "/myprofile/logout", // Matches /project/
